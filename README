@@ -14,5 +14,5 @@ Useful for when the server you are pushing to doesn't have access to your reposi
 		export_changes.rb 1550:1560
 
 	Produces:
-		1550_1560.zip
+		1550_1560.zip [saved to ~/Desktop]
 
