@@ -27,9 +27,14 @@ else
   
     #zip up the files
     %x{zip -r #{store_in}.zip #{store_in}}
+
+    #copy .zip to Desktop
+    %x{cp #{store_in}.zip ~/Desktop}
   
     #remove the old directory
     FileUtils.rm_r "#{store_in}"
+    FileUtils.rm_r "#{store_in}.zip"
+
   else
     puts 'No changes to export in this directory. Move to the root of your branch/trunk and try again.'
   end
